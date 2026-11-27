@@ -1,0 +1,28 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Automatically generated application data
+data/
+
+# Automatically generated configuration
+config/
+
+# Log files
+*.log
+
+# Environment variables and secrets
+.env
+
+# VS Code settings
+.vscode/
+
+# Operating system files
+Thumbs.db
+.DS_Store

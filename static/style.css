@@ -1,0 +1,161 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 30px 15px;
+    color: #1e293b;
+}
+
+/* Main application container */
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Application heading */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* Task statistics */
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.statistics p {
+    flex: 1;
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add task form */
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.add-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* General button styling */
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Individual button colours */
+.add-btn {
+    background-color: #2563eb;
+}
+
+.complete-btn {
+    background-color: #16a34a;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+/* Task list */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #f8fafc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.task-item span {
+    overflow-wrap: anywhere;
+}
+
+/* Task action buttons */
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions form {
+    margin: 0;
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+/* Empty task list message */
+.empty-message {
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* Mobile screen support */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    .statistics {
+        flex-direction: column;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
